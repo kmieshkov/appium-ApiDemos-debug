@@ -35,7 +35,7 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel_2_XL_API_30");
-		options.setApp("/Users/kmieshkov/Projects/IdeaProjects/appium/src/test/resources/ApiDemos-debug.apk");
+		options.setApp("/Users/kmieshkov/Projects/IdeaProjects/appium-ApiDemos-debug/src/test/resources/ApiDemos-debug.apk");
 
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		driver = new AndroidDriver(url, options);
