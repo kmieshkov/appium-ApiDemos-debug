@@ -11,7 +11,7 @@ public class AppiumBasics extends BaseTest {
 	// Click Gesture
 	//Preference > Preference dependencies > WiFi & WiFi settings
 	@Test
-	public void WiFiTest() {
+	public void wiFiTest() {
 		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 		driver.findElement(AppiumBy.accessibilityId("3. Preference dependencies")).click();
 		driver.findElement(AppiumBy.id("android:id/checkbox")).click();

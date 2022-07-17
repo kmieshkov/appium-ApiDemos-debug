@@ -8,7 +8,7 @@ public class ScrollGesture extends BaseTest {
 	// Scroll method used if no prior data
 	// Views > WebView
 	@Test
-	public void ScrollGestureJavaScript() throws InterruptedException {
+	public void scrollGestureJavaScript() throws InterruptedException {
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
 
 		// scroll till end of the page
@@ -30,7 +30,7 @@ public class ScrollGesture extends BaseTest {
 	// This scroll method used if the element known prior
 	// Views > WebView
 	@Test
-	public void ScrollGesture() {
+	public void scrollGesture() {
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
 
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"))")).click();

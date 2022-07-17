@@ -24,7 +24,7 @@ public class BaseTest {
 	AppiumDriverLocalService service;
 
 	@BeforeClass
-	public void ConfigureAppium() throws MalformedURLException {
+	public void configureAppium() throws MalformedURLException {
 		service = new AppiumServiceBuilder()
 				.withAppiumJS(new File("/Users/kmieshkov/.nvm/versions/node/v18.0.0/lib/node_modules/appium/build/lib/main.js"))
 				.withIPAddress("127.0.0.1")
@@ -42,7 +42,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
-	public void LongPressAction(WebElement element) {
+	public void longPressAction(WebElement element) {
 		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of(
 				"elementId", ((RemoteWebElement) element).getId(),
 				"duration", 2000

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class SwipeGesture extends BaseTest {
 	// Views > Gallery > Photos
 	@Test
-	public void SwipeGesture() {
+	public void swipeGesture() {
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
 		driver.findElement(AppiumBy.accessibilityId("Gallery")).click();
 		driver.findElement(AppiumBy.accessibilityId("1. Photos")).click();
